@@ -1,0 +1,48 @@
+$text-color: #f8422b;
+
+
+.app__navbar {
+    width: 100%;    
+
+    .app__navbar-container {       
+
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .app__navbar-navigation {
+            width: 30%;            
+
+           ul {
+            margin: 20px;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+                li {
+
+                    a {
+                        color:$text-color;
+                        font-family: 'Roboto', sans-serif;
+                        text-transform: uppercase;
+                        text-decoration: none;
+
+                        font-size: 1.5rem;
+                        letter-spacing: 0.2em;
+                        
+                    }
+                }
+           }
+        }
+
+        .app__navbar-logo {
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
