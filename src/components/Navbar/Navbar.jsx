@@ -7,7 +7,7 @@ import "./Navbar.scss"
 const Navbar = () => {
 
     return (
-        <div className="app__navbar">
+        <nav className="app__navbar">
             <div className="app__navbar-container">
                 <div className="app__navbar-logo">
                     <a href="home">
@@ -26,7 +26,7 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>            
-        </div>
+        </nav>
     );
 };
 
