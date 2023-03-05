@@ -2,6 +2,32 @@ $bg-color: #010403;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: $bg-color;
+    
+
+    h2, h3, p {
+        font-family: 'Roboto', sans-serif;
+        color: #fff;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 600;
+
+        letter-spacing: 0.2em;
+    }
+
+    p {
+        letter-spacing: 0.2em;
+    }
+
+    span {
+        color: #fff;
+    }
 }

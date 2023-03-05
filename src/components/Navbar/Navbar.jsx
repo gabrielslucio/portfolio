@@ -17,7 +17,7 @@ const Navbar = () => {
                 <div className="app__navbar-navigation">
                     <ul className="app__navbar-ul">
                         <li className="app__navbar-about">
-                            <a href="about">About</a>
+                            <a href="#about">About</a>
                         </li>
                         <span>|</span>
                         <li className="app__navbar-projects"><a href="projects">Projects</a></li>
