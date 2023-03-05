@@ -1,5 +1,4 @@
 import React from "react";
-import images from "../../constants/images";
 import projects from "../../constants/projects";
 import Slider from "../../components/Slider/Slider";
 
@@ -15,16 +14,16 @@ function Projects() {
           <div className="app__projects-list">
             <ul>
               {projects.map((project) => (
-                <li className={"app__projects-item" + project.id} key={project.id}>
-                  <h2>{project.name}</h2>
-                  <Slider projectId={project.id} />
-                  <p>
-                    <span>Description:</span> {project.description}
-                  </p>
-                  <p>
-                    <span>Functionalities:</span> {project.functionalities}
-                  </p>
-                </li>
+                <dl className={"app__projects-item" + project.id} key={project.id}>
+                  <dt>
+                    <h2>{project.name}</h2>
+                  </dt>
+                  <Slider projectId={project.id} />                  
+                  <dt>Description:</dt>
+                  <dd>{project.description}</dd>
+                  <dt>Functionalities:</dt>
+                  <dd>{project.functionalities}</dd>
+                </dl>
               ))}
             </ul>
           </div>

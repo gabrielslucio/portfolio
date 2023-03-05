@@ -1,0 +1,147 @@
+.app__projects {
+    width: 100%;
+
+    height: 1100px;
+
+    margin-top: 80px;
+    background-color: #fff;;
+
+    .app__projects-container {
+        display: grid;
+
+        grid-template-columns: 1fr 100px 100px 1fr;
+        grid-template-rows: 100px 300px 400px;
+
+        .app__projects-header {
+
+            margin-top: 90px;
+            
+            grid-column: 2 / span 2;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            h1 {
+                color: #010403;
+                font-family: 'Roboto', sans-serif;
+                font-size: 4rem;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+            }
+        }
+
+        .app__projects-list {
+            width: 100%;
+
+            margin-top: 150px;
+            margin-left: 80px;
+            grid-column: 1;
+            grid-row: 2;
+
+            ul {
+
+                dl {
+                    display: flex;
+                    flex-direction: column;
+
+                    justify-content: center;
+                    align-items: center;
+
+                    gap: 20px;
+
+                    h2 {
+                       max-width: 825px;
+                       display: flex;
+                       justify-content: center;
+                       align-content: center;
+
+                       color: #010403;
+                    }
+
+                    .slider {
+                        img {
+                            object-fit: cover;
+
+                            width: 817px;
+                            height: 400px;
+
+                            border: double 4px transparent;
+                            background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00,#3020ff);
+                            background-origin: border-box;
+                            background-clip: padding-box, border-box;
+
+                        }
+
+                        .slider-buttons {
+                            margin-top: 20px;
+                            display: flex;
+                            justify-content: space-around;
+
+                            button {
+                                border: none;
+                                background-color: transparent;
+                                font-size: 2rem;
+
+                                cursor: pointer;
+
+                                .left {
+                                    border: 3px solid #fff;
+                                    border-radius: 10px;
+
+                                    color: #010403;
+                                }
+
+                                .left:hover {                                    
+                                    border: double 3px transparent;
+                                    border-radius: 10px;
+                                    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00,#3020ff);
+                                    background-origin: border-box;
+                                    background-clip: padding-box, border-box;
+                                }
+
+                                .right {
+                                    border: 3px solid #fff;
+                                    border-radius: 10px;
+
+                                    color: #010403;
+                                }
+
+                                .right:hover {
+                                    border: double 3px transparent;
+                                    border-radius: 10px;
+                                    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00,#3020ff);
+                                    background-origin: border-box;
+                                    background-clip: padding-box, border-box;
+                                }
+
+                            }
+                        }
+                    }
+
+                    dt {
+                        font-size: 1.8rem;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 0.2em;
+                    }
+
+                    dd {
+                        font-size: 1.2rem;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 500;
+                        text-transform: capitalize;
+                        letter-spacing: 0.1em;
+
+                    }
+
+                    
+                }
+
+
+            }
+        }
+    }
+}
