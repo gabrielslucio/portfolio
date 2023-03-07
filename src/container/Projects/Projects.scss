@@ -1,7 +1,7 @@
 .app__projects {
     width: 100%;
-
-    height: 1100px;
+    
+    height: 1000px;
 
     margin-top: 80px;
     background-color: #fff;;
@@ -58,14 +58,15 @@
                        align-content: center;
 
                        color: #010403;
+                       font-size: 2rem;
                     }
 
                     .slider {
                         img {
                             object-fit: cover;
 
-                            width: 817px;
-                            height: 400px;
+                            width: 600px;
+                            height: 300px;
 
                             border: double 4px transparent;
                             background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00,#3020ff);
@@ -82,7 +83,7 @@
                             button {
                                 border: none;
                                 background-color: transparent;
-                                font-size: 2rem;
+                                font-size: 1.5rem;
 
                                 cursor: pointer;
 
@@ -120,27 +121,47 @@
                         }
                     }
 
+                    .description {
+                        margin-top: 5px;
+                       
+                    }
+
+                    .functionalities {
+                        margin-top: 30px;
+                        margin-bottom: 5px;
+                    }
+
+                    .app__description {
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        text-align: center;
+                    }
+
+                    .app__functionalities {
+
+                        text-align: center;
+                    }
+
+
                     dt {
-                        font-size: 1.8rem;
+                        font-size: 1rem;
                         font-family: 'Roboto', sans-serif;
-                        font-weight: 700;
+                        font-weight: 800;
                         text-transform: uppercase;
                         letter-spacing: 0.2em;
+
+                        
                     }
 
                     dd {
                         font-size: 1.2rem;
                         font-family: 'Roboto', sans-serif;
-                        font-weight: 500;
+                        font-weight: 200;
                         text-transform: capitalize;
                         letter-spacing: 0.1em;
 
                     }
-
-                    
                 }
-
-
             }
         }
     }

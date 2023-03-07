@@ -6,7 +6,7 @@ import "./Projects.scss";
 
 function Projects() {
     return (
-      <div className="app__projects">
+      <div className="app__projects" id="projects">
         <div className="app__projects-container">
           <div className="app__projects-header">
             <h1>Projects</h1>
@@ -19,10 +19,10 @@ function Projects() {
                     <h2>{project.name}</h2>
                   </dt>
                   <Slider projectId={project.id} />                  
-                  <dt>Description:</dt>
-                  <dd>{project.description}</dd>
-                  <dt>Functionalities:</dt>
-                  <dd>{project.functionalities}</dd>
+                  <dt className="description">Description:</dt>
+                  <dd className="app__description">{project.description}</dd>
+                  <dt className="functionalities">Functionalities:</dt>
+                  <dd className="app__functionalities">{project.functionalities}</dd>
                 </dl>
               ))}
             </ul>
