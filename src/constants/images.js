@@ -1,5 +1,3 @@
-import React from "react";
-
 import logo from "../assets/logo.png";
 import ppic from "../assets/ppic.jpg";
 import project01 from "../assets/bibliotecax/project01.jpg";
